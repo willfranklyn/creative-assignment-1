@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hockey</title>
+	<script type="text/javascript" src="creative1.js"></script>
+	<style>
+		body {
+			margin: 0px;
+		}
+		#logo{
+			margin:auto;
+			height:25rem;
+			background: url(brutesquad.jpg) center no-repeat;
+		}
+		form{
+			font-size:1.5rem;
+			text-align: center;
+			margin: 2%;
+		}
+		ul{
+			list-style-type: none;
+			width:60%;
+			margin:auto;
+		}
+		.player{
+			background-color: #EEE;
+			padding: 20px;
+    	margin-bottom: 40px;
+		}
+		.stats{
+			min-width: 40%;
+			display: inline-block;
+			text-indent: 2rem;
+		}
+		li{
+			max-height: 20rem;
+		}
+		li img{
+			display: inline-block;
+			height:15rem;
+		}
+	</style>
+</head>
+<body onload="onLoad()">
+	<header id="logo"></header>
+	<form>
+		Search stats or names for: <input type="text" id="search-field" onkeyup="updateList()">
+	</form>
+	<ul id="search-results">
+	</ul>
+</body>
+</html>
